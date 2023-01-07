@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Exercise Tracker </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/index.css">
+    <script src="javascript/index.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <div class="left-section" id="left-section"></div>
+        <div class="middle-section" id="middle-section"></div>
+        <div class="right-section" id="right-section"></div>
+    </header>
+    <div class="space">
+        &nbsp;
+    </div>
+    <main clas="main">
+        <section class="list-grid" id="exercise-grid">
+            <div class="type-of-exercise" id="exercise-list"></div>
+            <div class="date-of-exercise" id="date-tracker-list"></div>
+            <div class="delete-button" id="deleteButtons"></div>
+        </section>
+        <section class="input-grid">
+            <form class="form1">
+                <div class="input-field">
+                    <label class="label-for-exercise" for="Ename"> Exercise Name </label>
+                    <br>
+                    <input class="input-new-exercise" id="add-new-exercise" type="text" placeholder="Type Here" name="Ename"/>
+                </div>
+            </form>
+            <form class="form2">
+                <div class="input-field">
+                    <label class="label-for-date" for="Date"> Date </label>
+                    <br>
+                    <input class="adding-date-to-exercise" id="add-due-date" type="date" name="Date"/>   
+                </div>
+            </form>
+            <form class="form3">
+                <div class="button-add-exercise">
+                    <label class="add-exercise-button" for="button"> Add Exercise </label>
+                    <br>
+                    <button class="add-the-contents" onclick="addExercise()" type="button" name="button"> Add New Exercise </button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-left-section">
+            <ul class="socialmedia-link-list">
+                <li id="list-1"></li>
+                <li id="list-2"></li>
+                <li id="list-3"></li>
+                <li id="list-4"></li>
+            </ul>
+        </div>
+        <div class="footer-middle-section">
+            <picture>
+                <source media="(max-width:769px)" srcset="#">
+                <img src="#" alt="Logo" style="width:auto;">
+            </picture>
+        </div>
+        <div class="footer-right-section">
+            <h1 class="footer-right-section-text"></h1>
+        </div>
+    </footer>
+</body>
+</html>

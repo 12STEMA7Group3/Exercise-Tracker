@@ -1,0 +1,512 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.934);
+}
+
+.space {
+    background-image: linear-gradient(rgba(20, 56, 100, 0.5),rgba(39, 7, 56, 0.145));
+}
+
+/** Header*/
+.header {
+    height: 70px;
+
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+
+    padding: 20px 8%;
+    background-image: linear-gradient(rgba(20, 56, 100, 0.5),rgba(39, 7, 56, 0.145));
+}
+
+.left-section {
+    -webkit-box-orient: horizontal;
+    -ms-box-orient: horizontal;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    margin-left: 2em;
+}
+
+.profile-picture {
+    width: 60px;
+    border-radius: 200px;
+    border: 4px rgba(98, 38, 77, 0.797);
+    border-style: groove;
+}
+
+@media (max-width: 469px) {
+    .header {
+        padding: 20px 4%;
+    }
+    .left-section {
+        margin-left: 0;
+    }
+    .profile-picture{
+        width: 20px;
+    }
+}
+
+@media (min-width: 469px) and (max-width: 869px) {
+    .header {
+        padding: 20px 4%;
+    }
+    .left-section {
+        margin-left: 0;
+    }
+}
+
+@media screen and (min-width: 869px) {
+    .profile-picture{
+        width: 60px;
+    }
+}
+
+
+.middle-section {
+    -webkit-box-orient: horizontal;
+    -ms-box-orient: horizontal;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+}
+
+.middle-header-title {
+    color: rgb(224, 103, 182);
+    font-family: 'Alex Brush', cursive;
+    font-weight: 200;
+}
+
+@media (max-width: 469px) {
+    .middle-header-title {
+        font-size: 25px;
+    }
+}
+
+@media (min-width: 469px) and (max-width: 869px) {
+    .middle-header-title {
+        font-size: 45px;
+    }
+}
+
+@media screen and (min-width: 869px) {
+    .middle-header-title {
+        font-size: 60px;
+    }
+}
+
+.middle-header-title:hover {
+    -webkit-text-stroke: 2px rgba(224, 103, 182, 0.825);
+    transition: 0.5s;
+    color: transparent;
+}
+
+.right-section {
+    -webkit-box-orient: horizontal;
+    -ms-box-orient: horizontal;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+}
+
+.right-header-link {
+    text-decoration: none;
+    color: rgb(173, 85, 142);
+    font-family: 'Moon Dance', cursive;
+    font-weight: 700;
+}
+
+@media (max-width: 469px) {
+    .right-header-link {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 469px) and (max-width: 869px) {
+    .right-header-link {
+        font-size: 35px;
+    }
+}
+
+@media screen and (min-width: 869px) {
+    .right-header-link {
+        font-size: 40px;
+    }
+}
+
+.right-header-link:hover {
+    background-color: rgba(76, 19, 47, 0.342);
+    border-radius: 50px;
+    -webkit-text-stroke: 0.2px rgba(187, 72, 147, 0.994);
+    transition: 0.2s;
+    color: transparent;
+}
+
+main {
+    height: 200vh;
+    margin-top: 5.8em;
+    background-image: linear-gradient(rgba(39, 7, 56, 0.145),rgba(39, 7, 56, 0.145));
+}
+
+/** The List/ Main Content*/
+.list-grid {
+    -webkit-box-orient: horizontal;
+    -ms-box-orient: horizontal;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+
+    align-items: center;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 2% 0;
+}
+
+.type-of-exercise {
+    -webkit-box-orient: horizontal;
+    -ms-box-orient: horizontal;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+
+    padding: 20px 2%;
+}
+
+.date-of-exercise {
+    -webkit-box-orient: horizontal;
+    -ms-box-orient: horizontal;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex: 1;
+    margin-right: 5em;
+
+    padding: 20px 2%;
+}
+
+@media screen and (max-width: 769px) {
+    .date-of-exercise {
+        margin-right: 1em;
+    }
+}
+
+.delete-button {
+    -webkit-box-orient: horizontal;
+    -ms-box-orient: horizontal;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    padding: 0 2%;
+}
+
+.check-box {
+    width: 7.5%;
+    margin-right: 5px;
+    cursor: pointer;
+    content: "\00a0";
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.check-box:focus {
+    -webkit-animation: click-wave 0.3s;
+    animation: click-wave 0.3s;
+}
+
+.check-box:checked {
+    background-color:rgb(72, 57, 87);
+    color: rgb(9, 216, 216);
+}
+
+.check-box:not(:checked) {
+    background-color: rgba(20, 5, 34, 0.326);
+}
+
+@-webkit-keyframes click-wave {
+    0% {
+        width: 10px;
+        height: 10px;
+        opacity: 0.5;
+    }
+    100% {
+        width: 20px;
+        height: 20px;
+        margin-left: -6px;
+        margin-top: -6px;
+        opacity: 0.0;
+    }
+}
+
+@keyframes click-wave {
+    0% {
+        width:10px;
+        height: 10px;
+        height: 10px;
+        opacity: 0.5;
+    }
+    100% {
+        width: 20px;
+        height: 20px;
+        margin-left: -6px;
+        margin-top: -6px;
+        opacity: 0.0;
+    }
+}
+
+.exercise-text {
+    margin-left: 4px;
+}
+
+.exercise-text, .date-text {
+    padding-top: 20px;
+
+    color:rgb(118, 194, 194);
+    font-size: 30px;
+}
+
+.exercise-text:hover, .date-text:hover {
+    -webkit-text-stroke: 1px rgb(93, 155, 155);
+    transition: 0.2s;
+    color: transparent;
+}
+
+.delete-buttons {
+    max-width: 200px;
+    width: 110%;
+    min-width: 65px;
+    height: 45px;
+
+    margin-top: 20px;
+    margin-right: 4px;
+
+    border-radius: 20px;
+    border-width: 4px;
+    border-color: rgb(41, 14, 66);
+    border-style: groove;
+    background-color: rgba(20, 5, 34, 0.326);
+
+    font-size: 25px;
+    color:rgb(118, 194, 194);
+
+    box-shadow: 0 4px 6px 0 rgba(0,0,0,0.24), 0 3px 26px 0 rgba(0,0,0,0.19);
+}
+
+.delete-buttons:hover {
+    cursor: pointer;
+
+    background-color: rgba(35, 9, 59, 0.235);
+
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.24), 0 1px 16px 0 rgba(0,0,0,0.19);
+
+    -webkit-text-stroke: 1px rgba(38, 55, 85, 0.801);
+    transition: 0.3s;
+    color: transparent;
+}
+
+.delete-buttons:active {
+    transform: translateY(4px);
+    box-shadow: 0 7px #000;
+}
+
+.exercise-text, .date-of-exercise, .delete-buttons {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+@media screen and (max-width: 450px) {
+    .exercise-text, .date-text {
+        font-size: 12px;
+    }
+
+    .delete-buttons {
+        width: 25%;
+        height: 25px;
+
+        font-size: 10px;
+
+        box-shadow: 0 4px 6px 0 rgba(0,0,0,0.24), 0 3px 6px 0 rgba(0,0,0,0.19);
+    }
+
+    .delete-buttons:hover {
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,0.24), 0 1px 3px 0 rgba(0,0,0,0.19);
+    }
+}
+
+@media (min-width: 450px) and (max-width: 769px) {
+    .exercise-text, .date-text {
+        font-size: 20px;
+    }
+
+    .delete-buttons {
+        font-size: 14px;
+
+        width: 50%;
+        height: 25px;
+        box-shadow: 0 4px 6px 0 rgba(0,0,0,0.24), 0 3px 16px 0 rgba(0,0,0,0.19);
+    }
+
+    .delete-buttons:hover {
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,0.24), 0 1px 6px 0 rgba(0,0,0,0.19);
+    }
+}
+
+/** input section */
+
+.input-grid {
+    display: grid;
+    row-gap: 5em;
+    column-gap: 5em;
+
+    text-align: center;
+
+    padding: 10% 2%;
+}
+
+@media (max-width: 769px) {
+    .input-grid {
+        grid-template-columns: 1fr;
+    }
+}
+@media screen and (min-width: 769px) {
+    .input-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.label-for-exercise, .label-for-date, .add-exercise-button {
+    color: rgb(126, 77, 179);
+    font-family: 'East Sea Dokdo', sans-serif;
+    font-size: 35px;
+}
+
+.adding-date-to-exercise, .input-new-exercise {
+    flex: 1;
+    text-align: center;
+}
+
+.button-add-exercise {
+    margin-top: 5px;
+}
+
+.input-new-exercise, .adding-date-to-exercise, .add-the-contents {
+    max-width: 500px;
+    width: 90%;
+    height: 30px;
+
+    font-size: 20px;
+    color:rgb(118, 194, 194);
+
+    border-radius: 20px;
+    border-width: 4px;
+    border-color: rgb(41, 14, 66);
+    border-style: groove;
+    background-color: rgba(20, 5, 34, 0.326);
+
+    box-shadow: 0 4px 6px 0 rgba(0,0,0,0.24), 0 3px 36px 0 rgba(0,0,0,0.19);
+}
+
+@media screen and (max-width: 450px) {
+    .input-new-exercise, .adding-date-to-exercise, .add-the-contents {
+        width: 40%;
+        height:  25px;
+
+        font-size: 9px;
+
+        box-shadow: 0 4px 6px 0 rgba(0,0,0,0.24), 0 3px 16px 0 rgba(0,0,0,0.19);
+    }
+
+    .label-for-exercise, .label-for-date, .add-exercise-button {
+        font-size: 17px;
+    }
+
+    .input-new-exercise:hover, .adding-date-to-exercise:hover, .add-the-contents:hover {
+        background-color: rgba(32, 5, 54, 0.31);
+    
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,0.24), 0 1px 6px 0 rgba(0,0,0,0.19);
+    }
+}
+
+@media (min-width: 450px) and (max-width: 769px) {
+    .input-new-exercise, .adding-date-to-exercise, .add-the-contents {
+        width: 50%;
+
+        font-size: 15px;
+
+        box-shadow: 0 4px 6px 0 rgba(0,0,0,0.24), 0 3px 16px 0 rgba(0,0,0,0.19);
+    }
+
+    .label-for-exercise, .label-for-date, .add-exercise-button {
+        font-size: 25px;
+    }
+
+    .input-new-exercise:hover, .adding-date-to-exercise:hover, .add-the-contents:hover {
+        background-color: rgba(32, 5, 54, 0.31);
+    
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,0.24), 0 1px 6px 0 rgba(0,0,0,0.19);
+    }
+}
+
+.input-new-exercise:hover {
+    cursor: text;
+}
+
+.add-the-contents:hover {
+    cursor: pointer;
+}
+
+.add-the-contents:active {
+    transform: translateY(4px);
+    box-shadow: 0 7px #000;
+}
+
+.input-new-exercise:hover, .adding-date-to-exercise:hover, .add-the-contents:hover {
+    background-color: rgba(32, 5, 54, 0.31);
+
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.24), 0 1px 26px 0 rgba(0,0,0,0.19);
+}
+
+
+
+
+

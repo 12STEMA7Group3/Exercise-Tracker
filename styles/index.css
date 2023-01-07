@@ -242,10 +242,9 @@ main {
 }
 
 .check-box {
-    width: 7.5%;
+    width: 5.5%;
     margin-right: 5px;
     cursor: pointer;
-    content: "\00a0";
     -webkit-border-radius: 50%;
     border-radius: 50%;
 }
@@ -262,33 +261,6 @@ main {
 
 .check-box:not(:checked) {
     background-color: rgba(20, 5, 34, 0.326);
-}
-
-@-webkit-keyframes click-wave {
-    0% {
-        width: 10px;
-        height: 10px;
-        opacity: 0.5;
-    }
-    100% {
-        width: 20px;
-        height: 20px;
-        opacity: 0.0;
-    }
-}
-
-@keyframes click-wave {
-    0% {
-        width:10px;
-        height: 10px;
-        height: 10px;
-        opacity: 0.5;
-    }
-    100% {
-        width: 20px;
-        height: 20px;
-        opacity: 0.0;
-    }
 }
 
 .exercise-text {
@@ -357,7 +329,7 @@ main {
 
     .delete-buttons {
         width: 25%;
-        height: 25px;
+        height: 32px;
 
         font-size: 10px;
 

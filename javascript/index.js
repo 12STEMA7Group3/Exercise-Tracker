@@ -66,14 +66,6 @@
     }
 
 // Controller
-    const addImg = () => {
-        let img = document.createElement('img');
-        img.src = "/assets/images/profile-pictures/Myprofile.png";
-        img.setAttribute('class', 'profile-picture');
-        img.setAttribute('id', 'profile-picture');
-        img.setAttribute('alt', 'profile-picture');
-        document.getElementById('left-section').appendChild(img);
-    }
 
     const middleSectionHeader = (middleSectionHeaderh1) => {
         let title = document.createElement('h1');
@@ -128,7 +120,6 @@
     } 
 
 // View
-    addImg();
     middleSectionHeader(h1);
     rightSectionHeader();
     rightSectionHeaderLink(h3);

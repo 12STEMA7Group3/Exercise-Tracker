@@ -3,7 +3,7 @@
     let h3 = 'Goals';
 
     let exerciseNames;
-    const savedexerciseNames = JSON.parse(localStorage.getItem('RealExerciseNames2'));
+    const savedexerciseNames = JSON.parse(localStorage.getItem('RealExerciseNames3'));
 
     if(Array.isArray(savedexerciseNames)) {
         exerciseNames = savedexerciseNames;
@@ -62,7 +62,7 @@
     }
 
     const saveExerciseNames = () => {
-        localStorage.setItem('RealExerciseNames2', JSON.stringify(exerciseNames));
+        localStorage.setItem('RealExerciseNames3', JSON.stringify(exerciseNames));
     }
 
 // Controller
